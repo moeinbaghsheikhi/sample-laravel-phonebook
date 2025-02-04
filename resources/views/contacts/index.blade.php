@@ -88,18 +88,18 @@
                     <div class="row mb-3">
                         <div class="col-md-6">
                             <label for="first_name" class="form-label">نام</label>
-                            <input type="text" class="form-control" id="first_name" name="first_name" placeholder="نام">
+                            <input type="text" class="form-control" id="first_name" value="{{ old('first_name') }}" name="first_name" placeholder="نام">
                         </div>
 
                         <div class="col-md-6">
                             <label for="last_name" class="form-label">نام خانوادگی</label>
-                            <input type="text" class="form-control" id="last_name" name="last_name" placeholder="نام خانوادگی">
+                            <input type="text" class="form-control" id="last_name" value="{{ old('last_name') }}" name="last_name" placeholder="نام خانوادگی">
                         </div>
                     </div>
 
                     <div class="mb-3">
                         <label for="phone" class="form-label">تلفن</label>
-                        <input type="text" class="form-control" id="phone" name="phone" placeholder="تلفن">
+                        <input type="text" class="form-control" id="phone" name="phone" value="{{ old('phone') }}" placeholder="تلفن">
                     </div>
 
                     @if ($errors->any())
